@@ -6,7 +6,7 @@ function [a, wf, p, q, dpdx, vx] = ViscousFluidCrackPlaneStrain(q0, t, Eprime, e
 % 
 %     Diagram: cross-section through the crack
 %
-%                         q₀ (fluid flux)
+%                         q₀ (fluid flux into one wing)
 %                            ↓
 %                    Injection point (x = 0)
 %                            *
@@ -30,7 +30,7 @@ function [a, wf, p, q, dpdx, vx] = ViscousFluidCrackPlaneStrain(q0, t, Eprime, e
 %     t         - Time (s).
 %     Eprime    - Plane strain Young's modulus (E/(1-nu^2)).
 %     etaprime  - Viscosity parameter for pressure gradient computation (eta*12).
-%     x         - Spatial coordinate along the crack (0 to l).
+%     x         - Spatial coordinate along the crack (0 to 1).
 % 
 % Arguments: (output)
 %     a         - Half-length of the crack (m).

@@ -31,7 +31,7 @@ function [a, wf, vy, P, dP, dpdx] = ToughnessDominatedCrackPenny(Q, t, Kprime, E
 %     Kprime   - Fracture toughness parameter. (Kprime=4*sqrt(2/pi)*Kc) (Pa·sqrt(m))
 %     Eprime   - Plane strain Young's modulus (E/(1-nu^2)).
 %     nu       - Poisson's ratio.
-%     r        - Radial coordinate within the fracture (0 to R).
+%     r        - Radial coordinate within the fracture (0 to 1).
 %     etaprime - Fluid viscosity (12*eta) (Pa·s)
 % 
 % Arguments: (output)

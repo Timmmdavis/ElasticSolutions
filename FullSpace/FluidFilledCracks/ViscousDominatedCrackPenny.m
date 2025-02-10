@@ -39,7 +39,7 @@
 %   etaprime -Fluid viscosity (12*eta) (Pa·s)
 %   E       - Young's modulus (Pa)
 %   nu      - Poisson's ratio (dimensionless)#
-%   r       - Radial coordinate within the fracture (0 to R).
+%   r       - Radial coordinate within the fracture (0 to 1).
 %   Kprime  - Fracture toughness parameter (Kprime=4*sqrt(2/pi)*Kc) (Pa·sqrt(m))
 %
 % Outputs:

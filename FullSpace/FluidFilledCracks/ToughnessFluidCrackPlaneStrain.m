@@ -5,7 +5,7 @@ function [a, wf, dwfdt, dpdx, vx] = ToughnessFluidCrackPlaneStrain(q0, t, Kc, Ep
 %
 %    Diagram: cross-section through the crack
 %
-%                         q₀ (fluid flux)
+%                         q₀  (fluid flux into one wing)
 %                            ↓
 %                    Injection point (x = 0)
 %                            *
@@ -30,7 +30,7 @@ function [a, wf, dwfdt, dpdx, vx] = ToughnessFluidCrackPlaneStrain(q0, t, Kc, Ep
 %     Kc        - Fracture toughness (Pa·sqrt(m)).
 %     Eprime    - Plane strain Young's modulus (E/(1-nu^2)) (Pa).
 %     etaprime  - Viscosity parameter for pressure gradient computation (12*eta) (Pa·s).
-%     x         - Spatial coordinate along the crack (-1 to 1).
+%     x         - Spatial coordinate along the crack (0 to 1).
 % 
 % Arguments: (output)
 %     a         - Half-length of the crack (m).
