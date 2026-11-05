@@ -59,7 +59,7 @@ a = ((Eprime .* q0 .* t) / (Kc .* pi.^(1/2))).^(2/3);
 x=x*a;
 
 %Tip speed - diff(a)./diff(t)
-vx=(2*Eprime*q0)/(3*Kc*pis^(1/2)*((Eprime*q0*t)/(Kc*pis^(1/2)))^(1/3));
+vx=(2*Eprime*q0)/(3*Kc*pi^(1/2)*((Eprime*q0*t)/(Kc*pi^(1/2)))^(1/3));
 
 % Compute fluid width
 wf = (4 .* (Kc).^(4/3)) ./ ((pi .* q0 .* t).^(1/3) .* Eprime.^(4/3)) .* sqrt(a.^2 - x.^2);
